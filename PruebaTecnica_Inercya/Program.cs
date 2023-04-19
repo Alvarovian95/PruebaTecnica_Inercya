@@ -5,7 +5,9 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace PruebaTecnica_Inercya
 {
@@ -67,7 +69,44 @@ namespace PruebaTecnica_Inercya
                 categoria.Products = listaProductos.Where(p => p.CategoryId == categoria.Id).ToList();
             }
 
+            //Serialización a xml   
+            CrearFicheroXML(listaCategorias);
 
+            //Serialización a json   
+            CrearFicheroJSON(listaCategorias);
+        }
+
+        static void CrearFicheroXML(List<Category> catalogo)
+        {
+            try
+            {
+                var rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Docs", "Catalog.xml");
+
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Category>));
+                using (FileStream fileStream = new FileStream(rutaArchivo, FileMode.Create))
+                {
+                    serializer.Serialize(fileStream, catalogo);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        static void CrearFicheroJSON(List<Category> catalogo)
+        {
+            try
+            {
+                var rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Docs", "Catalog.json");
+                var json = JsonSerializer.Serialize(catalogo);
+
+                File.WriteAllText(rutaArchivo, json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }
