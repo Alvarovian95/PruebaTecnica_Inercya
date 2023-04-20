@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog", "PruebaTecnica_Inercya\Catalog.csproj", "{D6D0EFE8-3B2F-40EE-A93C-46E699A6229D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers", "Customers\Customers.csproj", "{D2763F03-31F4-4DAE-ACB7-0FECC08A2EC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D6D0EFE8-3B2F-40EE-A93C-46E699A6229D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6D0EFE8-3B2F-40EE-A93C-46E699A6229D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6D0EFE8-3B2F-40EE-A93C-46E699A6229D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2763F03-31F4-4DAE-ACB7-0FECC08A2EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2763F03-31F4-4DAE-ACB7-0FECC08A2EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2763F03-31F4-4DAE-ACB7-0FECC08A2EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2763F03-31F4-4DAE-ACB7-0FECC08A2EC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
