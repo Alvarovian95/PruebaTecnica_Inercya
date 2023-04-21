@@ -58,16 +58,33 @@
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Data\Repository\CustomerRepository.cs" />
     <Compile Include="Data\Repository\IRepository\ICustomerRepository.cs" />
+    <Compile Include="Migrations\202304200855491_InitialMigration.cs" />
+    <Compile Include="Migrations\202304200855491_InitialMigration.designer.cs">
+      <DependentUpon>202304200855491_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304200901283_RegionDeleteModelMigration.cs" />
+    <Compile Include="Migrations\202304200901283_RegionDeleteModelMigration.designer.cs">
+      <DependentUpon>202304200901283_RegionDeleteModelMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Docs\Customers.csv" />
+    <None Include="Docs\Customers.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202304200855491_InitialMigration.resx">
+      <DependentUpon>202304200855491_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304200901283_RegionDeleteModelMigration.resx">
+      <DependentUpon>202304200901283_RegionDeleteModelMigration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -17,8 +17,6 @@ namespace Customers
         [Required]
         public string PostalCode { get; set; }
         [Required]
-        public string Region { get; set; }
-        [Required]
         public string Phone { get; set; }
     }
 }
