@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers", "Customers\Cust
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random", "Random\Random.csproj", "{D2BA36E0-B3C0-4CC9-8B88-64DFF19AE48B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTreeView", "WebTreeView\WebTreeView.csproj", "{AE7AE078-BC6E-4F90-BEB6-3F3E352F2CE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D2BA36E0-B3C0-4CC9-8B88-64DFF19AE48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2BA36E0-B3C0-4CC9-8B88-64DFF19AE48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2BA36E0-B3C0-4CC9-8B88-64DFF19AE48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7AE078-BC6E-4F90-BEB6-3F3E352F2CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7AE078-BC6E-4F90-BEB6-3F3E352F2CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7AE078-BC6E-4F90-BEB6-3F3E352F2CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7AE078-BC6E-4F90-BEB6-3F3E352F2CE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,32 @@
+﻿@model List<WebTreeView.Models.ItemModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="tree">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name</li>
+            if (item.Children != null && item.Children.Any())
+            {
+                <ul>
+                    @foreach (var child in item.Children)
+                    {
+                        <li>@child.Name</li>
+                        if (child.Children != null && child.Children.Any())
+                        {
+                            <ul>
+                                @foreach (var subchild in child.Children)
+                                {
+                                    <li>@subchild.Name</li>                                   
+                                }
+                            </ul>
+                        }
+                    }
+                </ul>
+            }
+        }
+    </ul>
+</div>
